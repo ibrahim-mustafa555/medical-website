@@ -1,0 +1,582 @@
+/* ------------------------------------------ */
+/*             TABLE OF CONTENTS
+/* ------------------------------------------ */
+
+/*   01 - Index Page Styles                  */
+/*   02 - About Us page Styles  		       */
+/*   03 - News page Styles          */
+
+/*   04 - Jobs page Styles          */
+
+/*   05 - Contact page Styles          */
+
+/* ------------------------------------------ */
+
+
+a{
+    font-weight: 400;
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	text-decoration: none;
+	o-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+a{
+	text-decoration: none;
+	o-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'DinNextLight';
+}
+   @font-face {
+    font-family: 'DinNextLight';
+    src: url('../fonts/din-next/light/DinNextLight.eot');
+    src: url('../fonts/din-next/light/DinNextLight.eot') format('embedded-opentype'), url('fonts/din-next/light/DinNextLight.woff2') format('woff2'), url('fonts/din-next/light/DinNextLight.woff') format('woff'), url('fonts/din-next/light/DinNextLight.ttf') format('truetype'), url('fonts/din-next/light/DinNextLight.svg#DinNextLight') format('svg');
+}
+@font-face {
+    font-family: 'DinNextRegular';
+    src: url('../fonts/din-next/regular/DinNextRegular.eot');
+    src: url('../fonts/din-next/regular/DinNextRegular.eot') format('embedded-opentype'), url('fonts/din-next/regular/DinNextRegular.woff2') format('woff2'), url('fonts/din-next/regular/DinNextRegular.woff') format('woff'), url('fonts/din-next/regular/DinNextRegular.ttf') format('truetype'), url('fonts/din-next/regular/DinNextRegular.svg#DinNextRegular') format('svg');
+}
+@font-face {
+    font-family: 'DinNextMedium';
+    src: url('../fonts/din-next/medium/DinNextMedium.eot');
+    src: url('../fonts/din-next/medium/DinNextMedium.eot') format('embedded-opentype'), url('fonts/din-next/medium/DinNextMedium.woff2') format('woff2'), url('fonts/din-next/medium/DinNextMedium.woff') format('woff'), url('fonts/din-next/medium/DinNextMedium.ttf') format('truetype'), url('fonts/din-next/medium/DinNextMedium.svg#DinNextMedium') format('svg');
+}
+@font-face {
+    font-family: 'DinNextBold';
+    src: url('../fonts/din-next/bold/DinNextBold.eot');
+    src: url('../fonts/din-next/bold/DinNextBold.eot') format('embedded-opentype'), url('fonts/din-next/bold/DinNextBold.woff2') format('woff2'), url('fonts/din-next/bold/DinNextBold.woff') format('woff'), url('fonts/din-next/bold/DinNextBold.ttf') format('truetype'), url('fonts/din-next/bold/DinNextBold.svg#DinNextBold') format('svg');
+}
+
+/*=======================================*/
+/*   01 - Index Page Styles                  */
+/* Navbar */
+.navbar .navbar-brand img {
+    max-width: 90%;
+    
+}
+@media (max-width: 778px) {
+    .navbar-brand
+	{
+		width:70%;
+	}
+}
+.navbar .nav-item .nav-link {
+    color: #223645;
+    font-size: 18px;
+    font-family: 'DinNextMedium';
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #3fb593
+}
+h1, h2, h3, h4, h5, h6{ 
+	font-family: 'DinNextBold' !important;
+}
+/* =========================================================================================*/
+/*   Slider    */
+
+.img-caption {
+    max-width: 70% !important;
+}
+.slider-carousel .owl-carousel .owl-theme .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.slider-desc {
+    position: absolute;
+    left: 3%;
+    top: 18%;
+    z-index: 99;
+    width: 100%;
+}
+.slider-desc p{
+	color: #223645;
+    font-size: 18px;
+    font-weight: 600;
+}
+.custom-btn {
+    background-color: #3fb593;
+    border-radius: 30px;
+    padding: .4rem 1.5rem;
+    font-size: 20px;
+}
+.custom-btn:hover{
+	background: #223645;
+}
+.slider-carousel .owl-dots {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+}
+.slider-carousel .owl-dots .owl-dot span {
+    height: 15px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #3fb593;
+    border-radius: 10px;
+    width: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slider-carousel .owl-dots .owl-dot.active span, .slider-carousel .owl-dots .owl-dot:hover span {
+    background: #3fb593;
+}
+.slider-carousel .owl-dot{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.slider-carousel .owl-nav   {
+        display: none
+}
+button:focus {
+    outline: none !important;
+}
+@media (max-width: 768px) {
+    .img-caption {
+        max-width: 40% !important;
+    }
+	.slider-desc {
+        position: absolute;
+        left: 0%;
+        top: 10%;
+        z-index: 99;
+        width: 100%;
+    }
+    .slider-desc p{
+        color: #223645;
+        font-size: 12px;
+        font-weight: 600;
+        margin: 10px 0 !important;
+    }
+    .custom-btn {
+        background-color: #3fb593;
+        border-radius: 30px;
+        padding: .4rem 1.5rem;
+        font-size: 12px;
+    }
+    .slider-carousel .owl-dots {
+        display: none
+    }
+}
+/* ===========================================================================================*/
+/* Section About && Grouping Style Pages */ 
+.about span,
+.accreditation span,
+.job span,
+.subscribe span,
+.partners .part_span {
+    color: #3fb593;
+    font-size: 30px;
+    font-family: 'DinNextRegular'
+}
+.about p,
+.accreditation p ,
+.news p,
+.values p ,
+.sale p 
+{
+    color: #223645;
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 600;
+}
+.about a, 
+.accreditation a,
+.news .news_link{
+   background-color: #3fb593;
+    border-radius: 40px;
+    padding: 8px 18px;
+    font-size: 20px;
+    text-align: center
+}
+.about a:hover, 
+.accreditation a:hover{
+    background-color: #0f6049;
+}
+.about .box{
+    transition: all .2s ease-in-out;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.about .box:hover {
+    background-color: #fff;
+    border-radius: 10px;
+    transform: translateY(-10px);
+    box-shadow: 0 25px 25px rgba(3, 3, 3, 0.20);
+}
+.about .box  h4 {
+    margin: 8px 0;
+    font-family: 'DinNextMedium' !important;
+}
+.accreditation {
+    padding: 40px 0;
+    background-color: #f4f9fc
+}
+/* Job Section */
+
+.job .card {
+    border: 0
+/*    position: relative*/
+}
+.job .card .card-body {
+   margin-top: -27%;
+    background-color: #f4f9fc;
+    color: #333;
+    width: 95%;
+}
+.job .card-text {
+    ;
+    font-size: 16px;
+    line-height: 1.9;
+    font-weight: 600;
+}
+.job .card-title {
+    font-family: 'DinNextMedium' !important;
+    font-weight: 500
+}
+/* Subscribe Section */
+.subscribe {
+    background: url(../img/subscribepic.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 550px;
+}
+.subscribe .subscribe_wedgit{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.subscribe .wedgit {
+    background-color: #FFF;
+    padding: 25px 40px;
+    margin-top: 10%
+}
+.subscribe p {
+    color: #223645;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 600
+}
+.subscribe .form-group {
+    position: relative
+}
+.subscribe .form-group .form-control {
+    background-color: #f4f9fc;
+    padding: 20px ;
+    border-radius: 40px;
+    border: 0;  
+}
+.subscribe .form-group .butn{
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background-color: #3fb593;
+    padding: 8px 18px;
+    border-radius: 40px;
+    border: 0;
+    max-width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* Partners Section */
+.partners-carousel .owl-theme .owl-nav {
+    position: relative;  
+    margin-top: 0; 
+}
+.partners-carousel .owl-nav button.owl-prev {
+    background: #fff !important;
+    padding: 10px 20px !important;
+    border: 1px solid #3fb593 !important;
+    border-radius: 0;
+    font-size: 15px !important;
+    color: #3fb593 !important;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    text-align: center;
+}
+.partners-carousel .owl-nav button.owl-next {
+    background: #fff !important;
+    padding: 10px 20px !important;
+    border: 1px solid #3fb593 !important;
+    border-radius: 0;
+    font-size: 15px;
+    color: #3fb593 !important;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+} 
+
+.partners-carousel .item img{
+    max-width: 100% !important;
+    display: inline-block !important;
+}
+
+.partners-carousel .owl-theme .owl-dots .owl-dot span ,.owl-theme{
+    display: none;  
+}
+
+/*====================================================================*/
+/*   02 - About Us page Styles          */
+
+.header {
+    background: url(../img/bradcrump.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 300px;
+    position: relative
+}
+.header .info {
+    position: absolute;
+    transform: translate(10%,110%);
+    color: #223645
+}
+
+.header .info h1 {
+    font-weight: 700;
+}
+
+.header .info span {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center
+}
+
+.header .breadcrumb {
+    position: absolute;
+    bottom: -5px;
+   
+}
+.header .breadcrumb li, 
+.header .breadcrumb li a {
+    color: #223645;
+    font-size: 18px;
+    font-weight: 700;
+}
+.header .breadcrumb .active {color: #3fb593}
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #223645;
+    content: "|";
+}
+.about .colorr{
+    color: #3fb593
+}
+.about .about_text {
+    color: #223645;
+}
+.services {
+    background: url(../img/servicesbg.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 30px 0
+}
+.services .about_text {
+    color: #FFF;
+    font-size: 30px;
+    font-family: 'DinNextRegular'
+}
+
+.services .box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.services .box  h5 {
+    margin: 8px 0;
+    font-family: 'DinNextMedium' !important;
+}
+.services img {
+    max-width: 100%;
+}
+/*====================================================================*/
+/*   03 - News page Styles          */
+.sale {
+    background-color: #f4f9fc;
+}
+
+.news {
+    padding: 80px 0 0 ;
+}
+.news span {
+    font-size: 18px;
+    color: #223645;
+    font-family: 'DinNextRegular'
+    
+}
+
+.news .card-body {
+    background-color: #f4f9fc;
+    padding: 30px;
+}
+.news .card-body .fas {
+    color: #3fb593;
+}
+/*====================================================================*/
+/*   04 - Jobs page Styles          */
+.form_content {
+    padding: 40px 80px;
+    background-color: rgba(238, 238, 238, 0.6);
+    font-family: 'DinNextRegular'
+}
+
+.form_content input[type="text"], 
+.form_content 
+input[type="email"] {
+    background: #fff;
+    color: #333;
+    padding: 15px;
+    border: 1px solid #223645;
+}
+.input-group>.input-group-append>.btn {
+    background-color: #3fb593;
+}
+
+.form_content .bttn_form ,.connect_form .bttn_form
+{
+    background-color: #3fb593;
+    border-radius: 30px;
+    padding: .5rem 1.8rem;
+    font-size: 20px;
+    border: 0;
+    text-align: center
+}
+.form_content .bttn_form:hover ,.connect_form .bttn_form:hover
+{
+    background-color: #223645;
+}
+/* ========================================================= */
+/*   05 - Contact page Styles          */
+
+/* ====  */
+.connect_form
+input[type="text"], 
+.connect_form
+input[type="email"] {
+ 
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #223645;
+}
+.connect_form label {
+    font-weight: bold;
+    color: #223645;
+    font-size: 18px;
+    font-family: 'DinNextRegular'
+}
+
+.connect-info .text{
+	color: #223645;
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 600;
+}
+.connect-info p{
+	font-size: 18px;
+    font-weight: bold;
+}
+/*==========================================================================================*/
+/*====== Footer ===========*/
+.footer {
+    padding: 10px 0;
+    background: #3fb593 url(../img/vectorsfuters.png) no-repeat;
+    background-position: bottom;
+}
+.footer .logo-footer img{
+    max-width: 80% ;
+    
+}
+.social-media {
+    margin-left: 20%
+}
+.social-media a {
+    border: 1px solid #223645;
+    margin: 0px 8px;
+    color: #223645;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block
+}
+
+.social-media a:hover {
+    background: #223645;
+    border: 1px solid #223645;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer h2 {
+    font-family: 'DinNextMedium' !important;
+}
+.head-border:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: #FFF;
+    margin: 5px 0;
+}
+.footer li a {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'DinNextMedium'
+}
+.footer li a.active {
+    color: #223645
+}
+
+@media (max-width: 778px) {
+    .logo-footer img {
+    width: 70%
+    }
+}
+
+/* =============================================================================================*/
+
+/*================================*/
+#scroll-top {
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    background-color: #223645;
+    text-align: center;
+    right: 25px;
+    bottom: 200px;
+    position: fixed;
+    z-index: 9999;
+    display: none;
+    cursor: pointer;
+    padding: 3px 0;
+    border-radius: 25%;
+}
+
+
+
+
+
+
+
